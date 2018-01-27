@@ -14,7 +14,7 @@ git clone
 
 * [ZeroC](https://doc.zeroc.com/) - ZeroC ICE
 * [WCF](https://docs.microsoft.com/en-us/dotnet/framework/wcf/getting-started-tutorial) - Visual studio WCF
-* [socket] (https://www.geeksforgeeks.org/socket-programming-cc/) - C++ socket programming
+* [socket](https://www.geeksforgeeks.org/socket-programming-cc/) - C++ socket programming
 
 ## License
 
