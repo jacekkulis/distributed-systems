@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Intercity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Intercity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Intercity.Model" />
+  <xs:complexType name="ArrayOfIntercityConnection">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IntercityConnection" nillable="true" type="tns:IntercityConnection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfIntercityConnection" nillable="true" type="tns:ArrayOfIntercityConnection" />
+  <xs:complexType name="IntercityConnection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arrivalTime" type="ser:duration" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Intercity.Model" minOccurs="0" name="beggining" nillable="true" type="q1:City" />
+      <xs:element minOccurs="0" name="departureTime" type="ser:duration" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Intercity.Model" minOccurs="0" name="destination" nillable="true" type="q2:City" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IntercityConnection" nillable="true" type="tns:IntercityConnection" />
+</xs:schema>
