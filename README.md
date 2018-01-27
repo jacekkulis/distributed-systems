@@ -2,14 +2,6 @@
 
 This repo contains exercises with sockets, ice and wcf.
 
-### Prerequisites
-
-Clone repository
-
-```
-git clone
-```
-
 ## Built With
 
 * [ZeroC](https://doc.zeroc.com/) - ZeroC ICE
